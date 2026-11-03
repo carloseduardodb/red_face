@@ -1,0 +1,25 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "red-face"
+version = "0.1.0"
+description = "Hipóteses de emoção a partir da cor do rosto em vídeo comum (inspirado em Benitez-Quiroz, Srinivasan & Martinez, PNAS 2018)"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.24", "scipy>=1.10", "opencv-python>=4.8"]
+
+[project.optional-dependencies]
+plot = ["matplotlib>=3.7"]
+malha = ["mediapipe>=0.10"]  # só para scripts/compare_mesh.py
+dev = ["pytest>=7", "matplotlib>=3.7"]
+
+[project.scripts]
+redface = "redface.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/redface"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
