@@ -12,6 +12,7 @@ and says which emotion the color suggests — or admits that **it can't tell**.
 ![opencv](https://img.shields.io/badge/OpenCV-4.x%20%7C%205.x-5C3EE8?logo=opencv&logoColor=white)
 ![tests](https://img.shields.io/badge/tests-16%20passing-34a853)
 ![status](https://img.shields.io/badge/status-research%20%2F%20experimental-f9ab00)
+![license](https://img.shields.io/badge/license-MIT-blue)
 
 <img src="docs/img/linha_do_tempo_malha.png" alt="Timeline for a real RAVDESS actor: red/yellow change, pulse, estimated emotion vs. ground truth" width="860">
 
@@ -46,6 +47,7 @@ Orange = windows the system refused to answer.</sub>
 - [Limits](#-limits-read-before-using)
 - [Ethics and law](#%EF%B8%8F-ethics-and-law)
 - [Project structure](#-project-structure)
+- [License](#-license)
 - [References](#-references)
 
 ## 💡 The idea in 30 seconds
@@ -99,7 +101,7 @@ flowchart LR
     V[🎥 video / webcam] --> D[face detection<br/><sub>YuNet · OpenCV<br/>or MediaPipe mesh</sub>]
     D --> R[skin regions<br/><sub>5 regions or 133 triangles<br/>mouth excluded</sub>]
     D --> S[smile<br/><sub>mouth width ÷ eye distance</sub>]
-    D --> B[scene background<br/><sub>camera "witness"</sub>]
+    D --> B[scene background<br/><sub>camera witness</sub>]
     R --> C[color per region<br/><sub>L* a* b* · erythema</sub>]
     R --> P[rPPG pulse<br/><sub>POS · Wang 2017</sub>]
     C --> LB{{baseline<br/>10 s neutral}}
@@ -540,6 +542,12 @@ red_face/
 - color normalization with a grey card in the scene;
 - fusion with facial action units (py-feat / OpenFace), which is where most of the valence information is;
 - evaluation on an induced-emotion dataset with reference physiology (UBFC-Phys, MAHNOB-HCI).
+
+## 📜 License
+
+The code is released under the [MIT License](LICENSE).
+
+The README images that show RAVDESS frames (`rosto_real_ravdess.png`, `malha_ravdess.png`, `quadros_real.png`) are **not** MIT: they are derived from [RAVDESS](https://zenodo.org/records/1188976) (Livingstone & Russo, 2018) and licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) — no commercial use, same license for derivatives. The Royal Society interview used in the real-video test is CC BY 3.0. The face models downloaded at runtime keep their own licenses. See [`LICENSE`](LICENSE) for details.
 
 ## 📚 References
 

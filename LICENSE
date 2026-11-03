@@ -1,0 +1,44 @@
+MIT License
+
+Copyright (c) 2026 Carlos Eduardo Dias Batista
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+-------------------------------------------------------------------------------
+Third-party material NOT covered by the MIT License above
+-------------------------------------------------------------------------------
+
+The following images in docs/img/ contain frames from the RAVDESS dataset
+(Livingstone & Russo, 2018, https://zenodo.org/records/1188976) and are
+licensed under CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0/):
+
+  docs/img/rosto_real_ravdess.png
+  docs/img/malha_ravdess.png
+  docs/img/quadros_real.png
+
+The chart docs/img/linha_do_tempo_malha.png and docs/img/linha_do_tempo_real.png
+contain no RAVDESS frames, only measurements derived from them.
+
+docs/img/video_real_trecho_B.png contains measurements derived from
+"Interview on extreme weather with physical geographer Hannah Cloke",
+The Royal Society, CC BY 3.0 (via Wikimedia Commons).
+
+Models downloaded at runtime (YuNet from the OpenCV Zoo, MediaPipe Face
+Landmarker) are not distributed with this repository and keep their own
+licenses.

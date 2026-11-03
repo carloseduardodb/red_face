@@ -5,7 +5,8 @@ build-backend = "hatchling.build"
 [project]
 name = "red-face"
 version = "0.1.0"
-description = "Hipóteses de emoção a partir da cor do rosto em vídeo comum (inspirado em Benitez-Quiroz, Srinivasan & Martinez, PNAS 2018)"
+description = "Emotion hypotheses from facial color in ordinary video (inspired by Benitez-Quiroz, Srinivasan & Martinez, PNAS 2018)"
+license = { text = "MIT" }
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = ["numpy>=1.24", "scipy>=1.10", "opencv-python>=4.8"]
